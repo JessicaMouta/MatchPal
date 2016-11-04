@@ -11,10 +11,6 @@ function ($scope, $stateParams,$ionicModal,agendaApi) {
         return contatos;
     }
     obterContatos();
-    function onDeviceReady() {
-        console.log(navigator.contacts);
-    }
-    onDeviceReady();
     $scope.abrirTelaContato = function(){
         $scope.contato = {nome:'',telefone:'',favorito:false}
         $scope.openModal();
